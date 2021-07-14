@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.base.BaseClassCr;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class AmazonPhoneTask extends BaseClass {
+public class AmazonPhoneTask extends BaseClassCr {
 
 	public static void main(String[] args) {
 
@@ -24,19 +25,19 @@ public class AmazonPhoneTask extends BaseClass {
 
 		List<WebElement> elements = driver.findElements(By.xpath("//span[@class='a-price-whole']"));
 
+		Set<String> set = new TreeSet<String>();
+
 		for (int i = 0; i < elements.size(); i++) {
-			WebElement element = elements.get(i);
+			String text = elements.get(i).getText();
 
-			Set<WebElement> s = new TreeSet<WebElement>();
-			for (WebElement webElement : s) {
+			String replace = text.replace(",", "");
+			set.add(replace);
 
-				boolean addAll = s.addAll(elements);
-				System.out.println(addAll);
-				System.out.println(webElement);
-				String text = element.getText();
-				System.out.println(text);
+		}
 
-			}
+		for (String webElement : set) {
+
+			System.out.println(webElement);
 
 		}
 	}

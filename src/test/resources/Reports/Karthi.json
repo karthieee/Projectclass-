@@ -1,0 +1,165 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verifying Adactin login details with valid credentails",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-adactin-login-details-with-valid-credentails;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7454073300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the Adactin login page",
+            "match": {
+              "location": "BookingStepAdactin.user_is_on_the_Adactin_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2455913300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login \"karthikeyaneee\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"karthikeyaneee\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"123456\"",
+                  "offset": 39
+                }
+              ],
+              "location": "BookingStepAdactin.user_should_login_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1775726700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should enter \"Melbourne\",\"Hotel Sunshine\", \"Super Deluxe\", \"1 - One\", \"1 - One\", \"0 - None\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Melbourne\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Hotel Sunshine\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"Super Deluxe\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"0 - None\"",
+                  "offset": 86
+                }
+              ],
+              "location": "BookingStepAdactin.user_should_enter(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 727780900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should select hotel name",
+            "match": {
+              "location": "BookingStepAdactin.user_should_select_hotel_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1238512300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should book a hotel in booking page \"karthi\", \"Keyan\", \"Chennai\",\"1234567891234567\",\"American Express\",\"December\",\"2021\",\"321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"karthi\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Keyan\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"1234567891234567\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"American Express\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"December\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"2021\"",
+                  "offset": 119
+                },
+                {
+                  "val": "\"321\"",
+                  "offset": 126
+                }
+              ],
+              "location": "BookingStepAdactin.user_should_book_a_hotel_in_booking_page(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should verify order Id",
+            "match": {
+              "location": "BookingStepAdactin.user_should_verify_order_Id()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying Adactin details",
+    "description": "",
+    "id": "verifying-adactin-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]
